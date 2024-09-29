@@ -6,43 +6,46 @@
     <title>Document</title>
 </head>
 <style>
+    table{
+        border-collapse: collapse;
+    }
     table,
     th,
     td {
       padding: 4px 16px;  
       text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        border: 0.1px solid rgb(255, 255, 255);
     }
     th{
-        background-color: rgb(255, 187, 0);
+        background-color: rgb(244, 201, 83);
         color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
     }
     .para1{
-        background-color: rgb(58, 132, 107);
+        background-color: rgb(79, 165, 136);
         color: rgb(255, 255, 255);
-    }
-    thead :nth-child(odd){
-        background-color: red;
     }
     #empty{
         background-color: white;
     }
-   /* tbody tr:nth-child(1){
-        background-color: rgb(79, 73, 73);
-    }
-   tbody tr:nth-child(5){
-        background-color: rgb(79, 73, 73);
+   tbody tr:nth-child(odd){
+        background-color: rgb(224, 208, 124);
     }
    tbody tr:nth-child(even){
-        background-color: rgb(116, 108, 108);
+        background-color: rgb(228, 231, 149);
+    } 
+   /* tbody tr:nth-child(1){
+        background-color: rgb(79, 73, 73);
     } */
-    co
 </style>
 <body>
     <table>
-        <colgroup>
+        <!-- <colgroup>
             <col style="background-color: rgb(34, 122, 17)" span="1">
             
-        </colgroup>
+        </colgroup> -->
         <thead>
             <tr>
                 <th id="empty"></th>
@@ -55,7 +58,7 @@
 
         <tbody>
             <tr>
-                <td >Parameter 1</td>
+                <td class="para1">Parameter 1</td>
                 <td ><i class="fa-solid fa-check"></i></td>
                 <td ><i class="fa-solid fa-check"></i></td>
                 <td ><i class="fa-solid fa-xmark"></i></td>

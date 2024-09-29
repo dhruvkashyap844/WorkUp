@@ -399,7 +399,9 @@ nav {
   display: block;
   flex-direction: column;
 }
-
+.sInfo{
+  display: none;
+}
 .shortGrid1{
   padding-top: 8px;
   display: grid;
