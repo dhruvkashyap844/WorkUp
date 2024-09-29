@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .d1 {
+      margin-left: 200px;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(159, 126, 86);
+      transition: 1s;
+      /*transition-timing-function: ease-in-out;
+        transition-delay: 2s; */
+      /* transform: scale(2); */
+      /* transform: translate(100px);
+       */
+       /* translate: 100px 100px 50px; */
+       /* transform: matrix(); */
+       /* scale x , skewy ,skewx, scaley, translatex ,translatey*/
+    }
+    .d2{
+      margin-left: 200px;
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(90, 60, 24);
+      transition: 1s;
+      /*transition-timing-function: ease-in-out;
+        transition-delay: 2s; */
+      /* transform: scale(2); */
+      /* transform: translate(100px);
+       */
+       /* translate: 100px; */
+    }
+    .d1:hover {
+       /* transform: rotatey(200deg); */
+       /* transform: scale(2); */
+       /* transform: scale3d(1 ,2, 4); */
+       transform: translate3d(100px ,200px, 90px);
+
+      /*transform: skew(45deg); */
+       /* translate: 100px 100px 50px; */
+       
+    }
+  </style>
+  <body>
+    <h1>Animation</h1>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    
+  </body>
+</html>
