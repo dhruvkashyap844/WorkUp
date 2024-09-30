@@ -1,0 +1,159 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1556388275-bb5585725aca?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c21va2V8ZW58MHx8MHx8fDA%3D);
+    object-fit: contain;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n1{
+    display: flex;
+}
+.n1 img{
+    margin-left: 50px;
+}
+
+
+
+.n2{
+    display: flex;
+}
+.n2 p{
+    margin: 0px 80px;
+    font-size: 22px;
+    color: white;
+}
+
+
+.n3{
+    display: flex;
+}
+.n3 input{
+    margin-right: 90px;
+    font-size: 25px;
+    padding: 10px 0px 10px 2px;
+    border: 1px solid orange;
+    border-radius: 7px;
+    color: white;
+    outline:none ;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.logo{
+    width: 130px;
+}
+
+main{
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 180px 80px 0px;
+}
+main div p{
+    display: flex;
+    width: 900px;
+    color: white
+}
+.tex1{
+    font-size: 70px;
+}
+.tex2{
+    font-size: 86px;
+    color: orange;
+}
+.tex3{
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.btn1{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(255, 145, 0);
+    font-size: large;
+    padding: 15px 57px;
+    margin: 28px 0px 0px 0px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.702);
+    width: 400px;
+    align-items: center;
+    border-radius: 10px;
+}
+.btn2{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 128, 0);
+    font-size: 23px;
+    font-weight: 900;
+    padding: 15px 145px;
+    margin: 0px 0px 0px 0px;
+}
+
+.inp{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 23px;
+    color: white;
+    outline: none;
+    margin: 40px 0px 20px 0px;
+}
+
+.btn3{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(255, 157, 0);
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 900;
+    padding: 15px 145px;
+    margin: 40px 0px 0px 0px;
+}
+.spanTex span{
+    color: white;
+    font-size: 23px;
+    display: block;
+}
+.spanTex{
+    display: block;
+    width: 280px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.fa_icon{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 20px;
+
+}
+.fa_icon i{
+    color: white;
+    font-size: 35px;
+}
+
+footer{
+    margin-top: 195px;
+    
+}
+footer i{
+    font-size: 60px;
+    margin: 0px 0px 50px 50px ;
+    background-color: rgba(0, 0, 0, 0.499);
+    padding: 20px;
+    border-radius: 100px;
+    color: white;
+}
