@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div button {
+      border: none;
+      background-color: rgb(64, 188, 159);
+      border-radius: 4px;
+      padding: 8px 14px;
+      font-size: 30px;
+      margin-top: 20px;
+      display: flex;
+      transition: 0.2s;
+    }
+    div button:hover {
+      background-color: rgb(7, 67, 53);
+      color: white;
+    }
+  </style>
+  <body>
+    <div>
+      <div style="display: flex">
+        <button type="button" onclick="funDrop(),fun1()">Add Product 1</button>
+        <select name="adddd" id="addQuantity1">
+          <option value="1">add 1</option>
+          <option value="2">add 2</option>
+          <option value="3">add 3</option>
+          <option value="4">add 4</option>
+        </select>
+      </div>
+      <div style="display: flex">
+        <button type="button" onclick="funDrop2(),fun1()">Add Product 2</button>
+        <select name="adddd" id="addQuantity2">
+          <option value="1">add 1</option>
+          <option value="2">add 2</option>
+          <option value="3">add 3</option>
+          <option value="4">add 4</option>
+        </select>
+      </div>
+      <br />
+      <h1 id="no1st">No of products 1st = <span id="1st"></span></h1>
+      <h1>No of products 2nd = <span id="2nd"></span></h1>
+      <br />
+      <button type="button" onclick="fun4(),fun1()">Remove Product 1</button>
+      <button type="button" onclick="fun5(),fun1()">Remove Product 2</button>
+      <br />
+      <h1>Total no. of products in cart = <span id="cart"></span></h1>
+      <button type="button" onclick="fun6()">Clear Cart</button>
+    </div>
+  </body>
+</html>
+<script>
+  //   let a = 0;
+  //   function fun2() {
+  //     a = a + 1;
+  //     document.getElementById("1st").innerHTML = a; //add 1
+  //   }
+  //   let b = 0;
+  //   function fun3() {
+  //     b = b + 1;
+  //     document.getElementById("2nd").innerHTML = b; //add 2
+  //   }
+
+
+   //Addtion fun 
+  let drop = 0;
+  function funDrop() {
+    let e = document.getElementById("addQuantity1");
+    eText = parseInt(e.value);
+    drop = drop + eText;
+    document.getElementById("1st").innerHTML = drop;
+  }
+  let drop2 = 0;
+  function funDrop2() {
+    let e = document.getElementById("addQuantity2");
+    eText2 = parseInt(e.value);
+    drop2 = drop2 + eText2;
+    document.getElementById("2nd").innerHTML = drop2;
+  }
+  
+  //Remove Fun
+  function fun4() {
+    if (drop > 0) {
+      drop = drop - 1;
+    }
+    document.getElementById("1st").innerHTML = drop; //sub 1
+  }
+  function fun5() {
+    if (drop2 > 0) {
+      drop2 = drop2 - 1;
+    }
+    document.getElementById("2nd").innerHTML = drop2; //sub 2
+  }
+  //Total Fun
+  let c;
+  function fun1() {
+    c = drop + drop2;
+    document.getElementById("cart").innerHTML = c ; //cart
+  }
+
+  function fun6() {
+    //Clear
+    document.getElementById("1st").innerHTML = a = 0;
+    document.getElementById("2nd").innerHTML = b = 0;
+    document.getElementById("cart").innerHTML = c = 0;
+  }
+
+</script>

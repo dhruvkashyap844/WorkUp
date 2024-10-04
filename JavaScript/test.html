@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="funAdd1(),funTotal()">Add Product 1</button>
+    <select name="aaa" id="addQuantity1">
+      <option value="1">Add 1</option>
+      <option value="2">Add 2</option>
+      <option value="3">Add 3</option>
+    </select>
+    <br />
+    <button type="button" onclick="funAdd2(),funTotal()">Add Product 2</button>
+    <select name="aaa" id="addQuantity2">
+      <option value="1">Add 1</option>
+      <option value="2">Add 2</option>
+      <option value="3">Add 3</option>
+    </select>
+
+    <h3>No of products 1st = <span id="1stPR"></span></h3>
+    <h3>No of products 2nd = <span id="2ndPR"></span></h3>
+
+    <button type="button" onclick="funRem1(),funTotal()">Remove Product 1</button> <br>
+    <button type="button" onclick="funRem2(),funTotal()">Remove Product 2</button>
+    <h3>Total no. of products in cart = <span id="cart"></span></h3>
+    <button type="button" onclick="funClear()">Clear cart</button>
+  </body>
+</html>
+
+<script>
+    //Addtion fun 1
+  let a = 0;
+  function funAdd1() {                                  
+    let e = document.getElementById("addQuantity1");
+    eDrop = parseInt(e.value);
+    a = a + eDrop;
+    document.getElementById("1stPR").innerHTML = a;
+  }
+  let b = 0;
+  function funAdd2() {
+    let e = document.getElementById("addQuantity2");
+    eDrop1 = parseInt(e.value);
+    b = b + eDrop1;
+    document.getElementById("2ndPR").innerHTML = b;
+  }
+  
+  //Remove Fun 
+  function funRem1(){
+    if(a>0){
+        a=a-1;
+        document.getElementById("1stPR").innerHTML = a;
+    }
+  }
+
+  function funRem2(){
+    if(b>0){
+        b=b-1;
+        document.getElementById("2ndPR").innerHTML = b;
+    }
+  }
+
+
+  //Total fun 
+  let c = 0;
+  function funTotal() {
+    c = a + b;
+    document.getElementById("cart").innerHTML = c;
+  }
+
+
+
+
+
+  //Clear fun
+  function funClear(){
+    document.getElementById("1stPR").innerHTML = a=0 ;
+    document.getElementById("2ndPR").innerHTML = b=0;
+    document.getElementById("cart").innerHTML = c=0;
+  }
+</script>
